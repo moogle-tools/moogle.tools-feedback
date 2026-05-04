@@ -1,0 +1,75 @@
+name: 🐛 Bug Report
+description: Report something broken, incorrect, or not working as expected.
+title: "[Bug]: "
+labels: ["bug", "needs triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug! Please include enough detail so I can reproduce the issue.
+
+  - type: dropdown
+    id: tool
+    attributes:
+      label: Which tool is this about?
+      options:
+        - Moogle Treasure Trove Planner
+        - Mini Cactpot Solver
+        - General site / navigation
+        - Other / not sure
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: Briefly describe the problem.
+      placeholder: The planner says I need the wrong number of tomestones...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: What did you do before the issue happened?
+      placeholder: |
+        1. Opened the Treasure Trove Planner
+        2. Selected these rewards...
+        3. Marked this challenge complete...
+        4. Saw the wrong total
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+      placeholder: I expected the remaining tomestone count to be...
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: What actually happened?
+      placeholder: Instead, it showed...
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshots or extra details
+      description: Drag and drop screenshots here if they help.
+    validations:
+      required: false
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser / device
+      placeholder: Firefox on Mac, Chrome on Android, Safari on iPhone, etc.
+    validations:
+      required: false

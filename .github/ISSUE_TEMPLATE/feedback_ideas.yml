@@ -1,0 +1,53 @@
+name: 💬 Feedback & Ideas
+description: Share general feedback, thoughts, things you like, or things that feel confusing.
+title: "[Feedback]: "
+labels: ["feedback", "needs review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing your thoughts! Short, casual feedback is totally fine.
+
+  - type: dropdown
+    id: tool
+    attributes:
+      label: Which part of moogle.tools is this about?
+      options:
+        - Moogle Treasure Trove Planner
+        - Mini Cactpot Solver
+        - General site / navigation
+        - Overall experience
+        - Other / not sure
+    validations:
+      required: true
+
+  - type: textarea
+    id: liked
+    attributes:
+      label: What did you like?
+      placeholder: The most useful part was...
+    validations:
+      required: false
+
+  - type: textarea
+    id: confusing
+    attributes:
+      label: What felt confusing, clunky, or missing?
+      placeholder: I wasn’t sure how to...
+    validations:
+      required: false
+
+  - type: textarea
+    id: ideas
+    attributes:
+      label: Any ideas or suggestions?
+      placeholder: It might be nice if...
+    validations:
+      required: false
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else?
+    validations:
+      required: false

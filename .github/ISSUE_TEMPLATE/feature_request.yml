@@ -1,0 +1,55 @@
+name: 💡 Feature Request
+description: Suggest a new feature, improvement, planner, or tool idea.
+title: "[Feature]: "
+labels: ["feature request", "needs triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the idea! Feature requests can be small quality-of-life improvements or larger tool ideas.
+
+  - type: dropdown
+    id: tool
+    attributes:
+      label: Which tool is this about?
+      options:
+        - Moogle Treasure Trove Planner
+        - Mini Cactpot Solver
+        - A new FFXIV tool idea
+        - General site / navigation
+        - Other / not sure
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+      description: What are you trying to do, or what feels harder than it should?
+      placeholder: I want to compare rewards more easily...
+    validations:
+      required: true
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: Describe the feature or improvement
+      placeholder: It would be helpful if...
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Any alternatives you considered?
+      description: Optional, but useful if there are multiple possible approaches.
+    validations:
+      required: false
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Extra context
+      description: Links, screenshots, examples, or related tools.
+    validations:
+      required: false
